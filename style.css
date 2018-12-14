@@ -5,9 +5,95 @@ body {
 	margin: 0;
 
 }
+ li {
+ 	list-style: none;
+ }
 
 #container {
+	margin: auto;
 	width: 1000px;
 	height: 100%;
 	border: solid 1px blue;
 }
+
+.header{
+	display: flex
+}
+
+.logo{
+	display: flex;
+	width: 855px;
+}
+.logoPic{
+	width: 275px;
+	height: 150px;
+}
+.name{
+	margin-left: 10px;
+	font-family: 'Yesteryear', cursive;
+	font-size: 60px;
+}
+
+.socialMedia{
+	width: 130px;
+
+}
+
+.smIcons{
+	display: flex;
+
+	
+}
+
+.facebook, .insta, .twitter{
+	text-align: center;
+	margin: 5px;
+	padding: 1px;
+	border-radius: 2px;
+
+	
+}
+
+.fab{
+	width: 20px;
+	padding-left: 1px;
+}
+
+.facebook{
+	padding-top: 3px;
+	color: rgb(195,210,214);
+	background-color: rgb(93,145,225);
+}
+
+.insta{
+	padding-top: 3px;
+	color: grey;
+	background-color:rgb(255,147,143);
+}
+
+.twitter{
+	padding-top: 3px;
+	color: white;
+	background-color:rgb(27,173,255);
+}
+
+.facebook:hover, .insta:hover, .twitter:hover{
+	cursor: pointer;
+
+}
+
+.navBar{
+	margin:auto;
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
