@@ -3,11 +3,102 @@ html {box-sizing: border-box;}
 
 body {
 	margin: 0;
+	display: flex;
+	justify-content: center;
 
 }
 
 #container {
 	width: 1000px;
-	height: 100%;
+	height: 1000px;
 	border: solid 1px blue;
+}
+#foodphotos {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	border: solid 1px black;
+}
+.foodpics {
+	height: 200px;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+
+li {
+	margin: 10px;
+	height: 170px;
+	width: 100%;
+	border: solid 1px black;
+	border-radius: 5px;
+
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+.food {
+	padding: 10px;
+}
+
+
+
+#accordion {
+	margin-top: 10px;
+	height:500px;
+	width: 100%;
+	border: solid 1px black;
+	overflow: auto;
+
+}
+
+
+
+.information {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.information h2 {
+	margin: 0;
+}
+
+.information a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	width: 100%;
+	margin: 0;
+
+}
+
+.active {
+	background-color: green;
+	border-bottom: none;
+}
+
+.information li {
+	cursor: pointer;
+	display: flex;
+	justify-content: center ;
+	padding: 10px;
+	height: 50px;
+	margin: 0;
+	padding:0;
+	border-bottom: solid 1px black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+
+}
+
+
+.accordion .panel.active {
+	display: block;
 }
