@@ -13,22 +13,35 @@ body {
 	height: 1000px;
 	border: solid 1px blue;
 }
+#middlecontent {
+	display: flex;
+	flex-direction: row;
+}
 #foodphotos {
-	height: 300px;
-	width: 100%;
+	height: 883px;
+	width: 50%;
+	display: block;
+	text-align: center;
+	margin: 0;
 	overflow: hidden;
 	border: solid 1px black;
 }
 .foodpics {
-	height: 200px;
-	width: 100%;
+	height: 800px;
+	width: 90%;
 	padding: 0;
+	margin-top: 5px;
+	margin-right: 48px;
+    margin-left: 20px;
 	display: flex;
+	overflow: auto;
+	flex-direction: column;
 	list-style: none;
-	justify-content: center;
+	align-items: center;
+	border-top: solid 1px lightsalmon;
 }
 
-li {
+.information li {
 	margin: 10px;
 	height: 170px;
 	width: 100%;
@@ -37,12 +50,25 @@ li {
 
 }
 
-img {
+.foodpics li {
+	margin: 10px;
+	height: 315px;
+	width: 85%;
+	border: solid 1px black;
+	border-radius: 5px;
+
+}
+
+.foodpics img {
 	height: 100%;
 	width: 100%;
 }
 
 .food {
+	margin-bottom: 0;
+    padding-bottom: 0;
+    margin-right: 20px;
+    margin-left: 20px;
 	padding: 10px;
 }
 
@@ -50,10 +76,8 @@ img {
 
 #accordion {
 	margin-top: 10px;
-	height:500px;
-	width: 100%;
-	border: solid 1px black;
-	overflow: auto;
+    height: 688px;
+    width: 635px;
 
 }
 
@@ -61,9 +85,11 @@ img {
 
 .information {
 	margin: 0;
-	padding: 0;
+	width: 633px;
+    padding: 0;
 	list-style: none;
 	display: flex;
+	width: 100%;
 }
 
 .information h2 {
@@ -71,16 +97,20 @@ img {
 }
 
 .information a {
+	text-align: center;
 	text-decoration: none;
 	color: black;
 	display: block;
 	width: 100%;
 	margin: 0;
+	padding: 10px;
+
 
 }
 
+
 .active {
-	background-color: green;
+	background-color: lightyellow;
 	border-bottom: none;
 }
 
@@ -92,13 +122,58 @@ img {
 	height: 50px;
 	margin: 0;
 	padding:0;
-	border-bottom: solid 1px black;
+	border-bottom: none;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 
 }
-
-
-.accordion .panel.active {
-	display: block;
+.tab-content {
+	height: 100%;
+	width: 100%;
+	margin:0;
 }
+#tab1 h2, #tab2 h2 {
+	font-size: 40px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px lightsalmon;
+    margin-bottom: 15px;
+}
+#tab2 h2 {
+	margin-right: 10px;
+   
+}
+#tab1 p, #tab2 p {
+	margin: 0;
+	width: 300px;
+	line-height: 30px;
+	font-size: 17px;
+}
+#tab1 {
+	margin: 0;
+	padding: 30px;
+	height: 636px;
+	width: 100%;
+	background: url(https://images.unsplash.com/photo-1513012459-76c32edad688?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: 0px -145px;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.4);
+	background-blend-mode: lighten;
+
+}
+
+#tab2 {
+	padding: 30px;
+}
+
+#tab3 {
+	height: 933px;
+    padding: 20px;
+    overflow: auto;
+}
+#tab3 ul{
+	list-style: none;
+}
+
+
